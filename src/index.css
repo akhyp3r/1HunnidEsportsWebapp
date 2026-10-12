@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #131314;
+  --bg-surface: #1e1f20;
+  --bg-hover: #282a2c;
+  --border-color: #333538;
+  --text-primary: #e3e3e3;
+  --text-secondary: #c4c7c5;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #131314;
+  color: #e3e3e3;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars matching Gemini */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333538;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #474a4d;
+}
+
+/* Gemini Sparkle Gradient animations */
+@keyframes geminiGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 24px rgba(239, 68, 68, 0.7));
+  }
+}
+
+.gemini-glow {
+  animation: geminiGlow 4s ease-in-out infinite;
+}
+
+/* Custom Glass pill */
+.gemini-pill {
+  background: #1e1f20;
+  border: 1px solid #333538;
+  border-radius: 9999px;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+.gemini-pill:hover {
+  background: #282a2c;
+  border-color: #474a4d;
+}
+
+/* Gemini Card */
+.gemini-card {
+  background: #1e1f20;
+  border: 1px solid #333538;
+  border-radius: 1.25rem;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.gemini-card:hover {
+  border-color: #44474a;
+}

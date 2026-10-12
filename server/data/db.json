@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "username": "admin",
+      "passwordHash": "$2b$10$wAbjbt4gdeijSxD2TeW2muGu6Qb3Yh5Z7OM/dXL.LVVDB.f16CdQu",
+      "plainPasswordPreview": "admin123",
+      "role": "manager",
+      "name": "Team Director",
+      "ign": "OneHunnidEsports",
+      "avatar": "/assets/logo.png",
+      "gameRole": "Owner / Head Coach",
+      "discord": "onehunnid#0001",
+      "bio": "One Hunnid Esports Operations Manager. Managing roster, scrim schedules, and team attendance.",
+      "status": "active",
+      "createdAt": "2026-10-12T15:29:44.255Z"
+    }
+  ],
+  "scrims": [],
+  "availabilities": [],
+  "announcements": [
+    {
+      "id": "ann_welcome",
+      "title": "Welcome to One Hunnid Esports Operations Hub",
+      "content": "This is the official portal for One Hunnid Esports. Use this hub to check scrim schedules, submit your daily free hours, and manage team attendance.",
+      "priority": "normal",
+      "pinned": true,
+      "authorName": "Management",
+      "authorRole": "manager",
+      "createdAt": "2026-10-12T15:29:44.256Z"
+    }
+  ],
+  "matches": [],
+  "playbook": [],
+  "strategies": []
+}
